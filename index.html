@@ -3,11 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book-shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="top-nav">
+            <div class="social-icon">
+                <i class="fa-brands fa-facebook fa-xl" style="color: #0f1929;"></i>
+                <i class="fa-brands fa-facebook fa-xl" style="color: #0f1929;"></i>
+                <i class="fa-brands fa-facebook fa-xl" style="color: #0f1929;"></i>
+            </div>
+            <div class="right-nav">
+                <div class="pay-info">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    <p><a href="./sign-up.html">Account</a></p>
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <p>Cart:0$</p>
+                </div>
+                <div id="seachBox">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    <input type="text" style="opacity: 1">
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div id="logo">
+                <p>BOOK SHOP</p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>HOME</li>
+                    <li>ARTICLES</li>
+                    <li>SHOP</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="landing-page">
+                <div class="carousel">
+                    <button class="swipe-left"><i class="fa-solid fa-arrow-left fa-lg"></i></button>
+                    <div class="description">
+                        <h1>Birds gonna be<br/> Happy</h1>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Qui, veniam deleniti culpa nam, ipsa quas perspicia.<br/>tis doloribus neque temporibus dolor,</p>
+                        <button class="readMore">READ MORE<i class="fa-solid fa-arrow-right fa-lg"></i></button>
+                    </div>
+                    <div class="image">
+                        <img class="book-cover" src="./img/main-banner2.jpg" alt="">
+                        <img class="pattern1" src="./img/pattern1.png" alt="">
+                    </div>
+                    <button class="swipe-right"><i class="fa-solid fa-arrow-right fa-lg"></i></button>
+                </div>
+        </section>
+        <section class="band">
+                <img src="./img/client-image1.png" alt="">
+                <img src="./img/client-image2.png" alt="">
+                <img src="./img/client-image3.png" alt="">
+                <img src="./img/client-image4.png" alt="">
+                <img src="./img/client-image5.png" alt="">
+        </section>
+        <section class="futured-books">
+            <p>SOME QUALITY ITEMS</p>
+            <h1 class="futured">Featured Books</h1>
+            <div class="books">
 
+            </div>
+        </section>
+        <section class="bestSelling">
+                <img class="bestImg" src="./img/single-image.jpg" alt="">
+                <div class="bestInfo">
+                    <h1>Best Selling Book</h1>
+                    <p>By Timbur Hood</p>
+                    <p>Birds Gonna Be Happys</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</br>
+                        eu feugiat amet, libero ipsum enim pharetra hac.</p>
+                    <p>$ 45.00</p>
+                    <div class="link">
+                        <p>Shop It Now</p>
+                        <i class="fa-solid fa-arrow-right fa-lg"></i>
+                    </div>
+                </div>
+        </section>
+        <section class="Popular-Books">
+            <div class="popDesc">            
+                <p>SOME QUALITY ITEMS</p>
+                <h1>Popular Books</h1></div>
+            <div>
+                <ul class="bottom-nav">
+                    <li id="all">All Genre</li>
+                    <li id="Business">Business</li>
+                    <li id="Technology">Technology</li>
+                    <li id="Adventure">Adventure</li>
+                </ul>
+            </div>
+            <div class="popBooks">
+                <div class="displayBooks"></div>
+            </div>
+        </section>
+    </main>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
