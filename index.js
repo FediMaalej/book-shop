@@ -46,6 +46,7 @@ function filter(array, predicate) {
        return acc; 
  }
 
+ 
 
 var futuredBooks = [
     {title: 'Simple Way Of Piece Life',author: 'Armor Ramsey', price:'40.00$',img:"./img/product-item1.jpg"},
@@ -190,13 +191,6 @@ $('#Adventure').click(function(){
         })
     })
 })
-
-$(document).ready(function(){
-    $(".buy").on("click", function() {
-        console.log( "Handler for `click` called." ); 
-    });
-})
-
 
 $(function () {
     $('.buy').on('click', function () {
