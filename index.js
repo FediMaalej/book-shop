@@ -63,7 +63,10 @@ $(document).ready(function () {
             <div class='featuredItems'>
                 <p class="inf" style="color:#74642F;">${element.title}</p>
                 <p class="inf" style="color:#8A8A89;">${element.author}</p>
+                <div class="btn">
                 <p class="inf" style="color:#74642F;">${element.price}</p>
+                <button class="buy">Buy</button>
+                </div>
             </div>
         </div>`)
     })
@@ -89,7 +92,10 @@ var popularBooks = [
                 <div class='featuredItems'>
                     <p class="infs" style="color:#74642F;">${element.title}</p>
                     <p class="infs" style="color:#8A8A89;">${element.author}</p>
+                    <div class="btn">
                     <p class="inf" style="color:#74642F;">${element.price}</p>
+                    <button class="buy">Buy</button>
+                    </div>
                 </div>
             </div>`)
         })
@@ -106,7 +112,10 @@ $('#all').click(function(){
                 <div class='featuredItems'>
                     <p class="infs" style="color:#74642F;">${element.title}</p>
                     <p class="infs" style="color:#8A8A89;">${element.author}</p>
+                    <div class="btn">
                     <p class="inf" style="color:#74642F;">${element.price}</p>
+                    <button class="buy">Buy</button>
+                    </div>
                 </div>
             </div>`)
         })
@@ -125,7 +134,10 @@ $('#Business').click(function(){
                 <div class='featuredItems'>
                     <p class="infs" style="color:#74642F;">${element.title}</p>
                     <p class="infs" style="color:#8A8A89;">${element.author}</p>
+                    <div class="btn">
                     <p class="inf" style="color:#74642F;">${element.price}</p>
+                    <button class="buy">Buy</button>
+                    </div>
                 </div>
                 </div>`)
             }
@@ -145,7 +157,10 @@ $('#Technology').click(function(){
                 <div class='featuredItems'>
                     <p class="infs" style="color:#74642F;">${element.title}</p>
                     <p class="infs" style="color:#8A8A89;">${element.author}</p>
+                    <div class="btn">
                     <p class="inf" style="color:#74642F;">${element.price}</p>
+                    <button class="buy">Buy</button>
+                    </div>
                 </div>
                 </div>`)
             }
@@ -165,13 +180,18 @@ $('#Adventure').click(function(){
                 <div class='featuredItems'>
                     <p class="infs" style="color:#74642F;">${element.title}</p>
                     <p class="infs" style="color:#8A8A89;">${element.author}</p>
+                    <div class="btn">
                     <p class="inf" style="color:#74642F;">${element.price}</p>
+                    <button class="buy">Buy</button>
+                    </div>
                 </div>
                 </div>`)
             }
         })
     })
 })
-
+$("button").on("click", function() {
+    console.log( "Handler for `click` called." ); 
+});
 
 
