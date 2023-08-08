@@ -190,8 +190,28 @@ $('#Adventure').click(function(){
         })
     })
 })
-$("button").on("click", function() {
-    console.log( "Handler for `click` called." ); 
-});
+
+$(document).ready(function(){
+    $(".buy").on("click", function() {
+        console.log( "Handler for `click` called." ); 
+    });
+})
+
+
+$(function () {
+    $('.buy').on('click', function () {
+  
+      var currentCount = parseInt($('.inc').text());
+  
+      $('.inc').text(currentCount + 1);
+    });
+  
+    $('.downvote').on('click', function () {
+  
+      var currentCount = parseInt($('#count').text());
+  
+      $('#count').text(currentCount - 1);
+    });
+  });
 
 
